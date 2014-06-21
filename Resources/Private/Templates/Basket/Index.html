@@ -12,7 +12,9 @@
 						<li class="span3">
 							<div class="thumbnail">
 								<f:if condition="{book.image}">
-									<f:then><img src="{f:uri.resource(resource: book.image)}" width="300" alt="" /></f:then>
+									<f:then>
+										<m:image image="{book.image}" maximumWidth="300" alt=""/>
+									</f:then>
 									<f:else><img src="http://placehold.it/300x300" width="300" alt="" /></f:else>
 								</f:if>
 								<div class="caption">
